@@ -13,8 +13,8 @@ export default function Profile() {
       }}
       transition={{ repeat: Infinity, duration: 4, type: 'tween' }}
     >
-      <div className="w-[220px] h-[300px] relative">
-        {/* <Image alt="profile" src={'/image00002-removebg.png'} fill /> */}
+      <div className="w-[170px] lg:w-[220px] h-[200px] lg:h-[270px] relative">
+        {/* <Image alt="profile" src={'/ProfilePic/image00002-removebg.png'} fill /> */}
       </div>
     </motion.div>
   );

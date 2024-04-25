@@ -7,8 +7,13 @@
   margin: 0;
   box-sizing: border-box;
 }
-.App {
-  background: linear-gradient(90deg, #09203f, #537895);
+.main {
+  background: linear-gradient(10deg, #010203, #1a2735);
+}
+
+.donwload {
+  background: lightgray;
+  border: 2px solid #09203f;
 }
 #Portfolio {
   scroll-behavior: smooth;

@@ -6,8 +6,8 @@ export default function Contact({
   ContactRef: MutableRefObject<HTMLDivElement | null>;
 }) {
   return (
-    <div className="h-screen w-full" ref={ContactRef}>
-      Contact
+    <div className="h-screen w-full flex items-center justify-center" ref={ContactRef}>
+      <h2 className="text-white text-4xl">Contact</h2>
     </div>
   );
 }
