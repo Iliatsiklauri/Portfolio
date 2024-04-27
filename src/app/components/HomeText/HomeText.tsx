@@ -14,6 +14,7 @@ export default function HomeText() {
         Hello 👋, <span className="font-semibold">I&apos;m Ilia,</span> a skilled frontend
         developer expanding into fullstack. Let&apos;s collaborate on exciting projects!
       </h1>
+      <h1>Welcome</h1>
       <DownloadCV />
     </motion.div>
   );
