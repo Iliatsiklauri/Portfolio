@@ -4,7 +4,7 @@ import Top from './sections/Top';
 import About from './sections/About';
 import Portfolio from './sections/Portfolio';
 import Contact from './sections/Contact';
-import Header from '../components/Header';
+import Header from '../components/DonwloadCV/Header';
 
 export default function Main() {
   const HomeRef = useRef<HTMLDivElement | null>(null);
@@ -12,7 +12,7 @@ export default function Main() {
   const AboutRef = useRef<HTMLDivElement | null>(null);
   const ContactRef = useRef<HTMLDivElement | null>(null);
   return (
-    <div className="flex items-center justify-center flex-col w-full overflow-hidden main">
+    <div className="flex items-center justify-center flex-col w-full overflow-hidden main xl:px-[10%]">
       <Header
         PortfolioRef={PortfolioRef}
         AboutRef={AboutRef}
