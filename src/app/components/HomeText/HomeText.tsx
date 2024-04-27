@@ -15,6 +15,7 @@ export default function HomeText() {
         developer expanding into fullstack. Let&apos;s collaborate on exciting projects!
       </h1>
       <DownloadCV />
+      <h1>hello my friend</h1>
     </motion.div>
   );
 }
