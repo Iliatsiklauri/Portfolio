@@ -4,7 +4,7 @@ import Top from './sections/Top';
 import About from './sections/About';
 import Portfolio from './sections/Portfolio';
 import Contact from './sections/Contact';
-import Header from '../components/DonwloadCV/Header';
+import Header from '../components/Header/Header';
 
 export default function Main() {
   const HomeRef = useRef<HTMLDivElement | null>(null);

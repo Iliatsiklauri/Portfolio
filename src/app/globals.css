@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 .main {
-  background: linear-gradient(10deg, #010203, #1a2735);
+  /* background: linear-gradient(10deg, #010203, #1a2735); */
+  background: linear-gradient(10deg, #010203, #13274f, #0a0b0c);
 }
 
 .donwload {
