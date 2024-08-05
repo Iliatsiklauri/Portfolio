@@ -18,8 +18,8 @@ export default function About({
       >
         <Profile />
       </motion.div>
-      <div className="w-3/5 flex flex-col items-center justify-center gap-5 lg:gap-10">
-        <h2 className="text-white text-4xl">About Me</h2>
+      <div className="w-4/5 lg:w-3/5 flex flex-col items-center justify-center gap-5 lg:gap-10">
+        <h2 className="text-white text-4xl">About me</h2>
         <div className="flex flex-col text-slate-300 gap-6 text-[12px] lg:text-base font-light text-center">
           <p className="lg:text-xl">
             I&apos;m all about making websites

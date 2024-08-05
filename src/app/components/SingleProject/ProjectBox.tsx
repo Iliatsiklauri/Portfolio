@@ -9,20 +9,28 @@ export default function ProjectBox({
   link,
   role,
   name,
+  main,
+  top,
 }: {
   mainControls: AnimationControls;
   name: string;
   image: string;
   link: string;
   role: boolean;
+  main: boolean;
+  top: boolean;
 }) {
   return (
-    <div className="h-full max-h-[200px] lg:max-w-[1000px] lg:max-h-[1000px] lg:h-[80%] lg:w-2/5 w-[80%] max-w-[400px]">
+    <div
+      className={`h-[170px] md:h-[220px] w-[340px] md:w-[400px] ${
+        role ? 'md:self-end' : ''
+      }`}
+    >
       <motion.div
-        className="relative h-full w-full items-center justify-center gap-5 rounded-xl overflow-hidden hidden lg:flex"
-        initial={{ opacity: 0, x: !role ? 300 : -300 }}
+        className="relative h-full w-full items-center justify-center gap-5 rounded-xl overflow-hidden hidden lg:flex "
+        initial={{ opacity: 0, x: role ? 300 : -300 }}
         animate={mainControls}
-        transition={{ type: 'spring', damping: 20 }}
+        transition={{ type: 'spring', damping: 30 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.9 }}
       >

@@ -67,15 +67,15 @@ export default function Header({
   return (
     <motion.div
       className="fixed border border-white border-opacity-40 bg-white bg-opacity-70 shadow-lg 
-    shadow-black/[0.1] backdrop-blur-[0.5rem] top-6 h-[3.25rem] w-[80%] sm:w-[60%]  lg:w-[50%] xl:w-[40%] rounded-full flex items-center justify-around z-10"
+    shadow-black/[0.1] backdrop-blur-[0.5rem] top-6 h-[3.25rem] w-[80%] sm:w-[60%] lg:w-[50%] xl:w-[40%] rounded-full flex items-center justify-around z-10"
       initial={{ y: 150, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: 'spring', damping: 20 }}
     >
       <button
         className={`text-gray-900 ${
-          isHomeInView ? 'text-opacity-100 font-medium  ' : 'text-opacity-50'
-        } hover:text-opacity-80 cursor-pointer transition text-black font-base`}
+          isHomeInView ? 'text-opacity-100 font-medium' : 'text-opacity-50'
+        } hover:text-opacity-80 cursor-pointer transition text-black font-base text-[14px] lg:text-base`}
         onClick={() =>
           HomeRef.current?.scrollIntoView({
             behavior: 'smooth',
@@ -87,7 +87,7 @@ export default function Header({
       <button
         className={`text-gray-900 ${
           isAboutInView ? 'text-opacity-100 font-medium ' : 'text-opacity-50'
-        } hover:text-opacity-80 cursor-pointer transition text-black font-base`}
+        } hover:text-opacity-80 cursor-pointer transition text-black font-base text-[14px] lg:text-base`}
         onClick={() =>
           AboutRef.current?.scrollIntoView({
             behavior: 'smooth',
@@ -101,7 +101,7 @@ export default function Header({
           isPortfolioInView
             ? 'text-opacity-100 font-medium '
             : 'text-opacity-50'
-        } hover:text-opacity-80 cursor-pointer transition text-black font-base`}
+        } hover:text-opacity-80 cursor-pointer transition text-black font-base text-[14px] lg:text-base`}
         onClick={() =>
           PortfolioRef.current?.scrollIntoView({
             behavior: 'smooth',
@@ -113,7 +113,7 @@ export default function Header({
       <button
         className={`text-gray-900 ${
           isContactInView ? 'text-opacity-100 font-medium ' : 'text-opacity-50'
-        } hover:text-opacity-80 cursor-pointer transition text-black font-base`}
+        } hover:text-opacity-80 cursor-pointer transition text-black font-base text-[14px] lg:text-base`}
         onClick={() =>
           ContactRef.current?.scrollIntoView({
             behavior: 'smooth',

@@ -11,8 +11,6 @@ export default function Portfolio({
   const animateRef = useRef(null);
   const isInView = useInView(animateRef, { once: true });
   const mainControls = useAnimation();
-  const firstRowData = portfolioData.slice(0, 2);
-  const secondRowData = portfolioData.slice(2);
   useEffect(() => {
     if (isInView) {
       mainControls.start({ opacity: 1, x: 0 });
@@ -20,40 +18,30 @@ export default function Portfolio({
   }, [isInView]);
   return (
     <motion.div
-      className="w-full h-screen flex items-center justify-center  flex-col gap-10 lg:gap-0 pt-[10%]"
+      className="w-full h-screen flex items-center justify-center flex-col md:pt-20 lg:pt-20 gap-3 md:gap-10 lg:gap-0"
       ref={PortfolioRef}
       variants={{
         visible: { opacity: 1, x: 0 },
       }}
     >
-      <h2 className="text-4xl font-semibold text-white">Projects</h2>
-      <div className="w-full h-full flex-col justify-between gap-20">
-        <div className="flex items-center justify-between gap-10 w-full h-1/2 flex-col lg:flex-row">
-          {firstRowData.map((el, key) => (
-            <ProjectBox
-              image={`${el.image}`}
-              link={`${el.url}`}
-              mainControls={mainControls}
-              name={`${el.title}`}
-              key={key}
-              role={el.role}
-            />
-          ))}
-        </div>
-        <div ref={animateRef}></div>
-        {/* <div className="flex items-center justify-between  w-full h-1/2">
-          {secondRowData.map((el, key) => (
-            <ProjectBox
-              image={`${el.image}`}
-              link={`${el.url}`}
-              mainControls={mainControls}
-              name={`${el.title}`}
-              key={key}
-              role={el.role}
-            />
-          ))}
-        </div> */}
+      <h2 className="text-2xl lg:text-4xl font-semibold text-white">
+        Projects
+      </h2>
+      <div className="flex flex-col items-center md:items-start w-full px-5 md:px-10 lg:px-0 lg:gap-0 gap-4">
+        {portfolioData.map((el, key) => (
+          <ProjectBox
+            image={`${el.image}`}
+            link={`${el.url}`}
+            mainControls={mainControls}
+            name={`${el.title}`}
+            key={key}
+            role={el.role}
+            main={el.main}
+            top={el.top}
+          />
+        ))}
       </div>
+      <div ref={animateRef}></div>
     </motion.div>
   );
 }
