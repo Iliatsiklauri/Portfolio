@@ -10,7 +10,7 @@ export const portfolioData = [
       '/icons/icons8-nestjs-48.png',
       '/icons/8546827_aws_icon.png',
       '/icons/react.svg',
-      '/icons/mongoDB.svg',
+      '/icons/mongoDB.png',
       '/icons/nextjs.svg',
       '/icons/4375017_js_logo_node_icon.png',
     ],
