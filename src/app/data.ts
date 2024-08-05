@@ -1,22 +1,28 @@
+import { imageConfigDefault } from 'next/dist/shared/lib/image-config';
+
 export const portfolioData = [
   {
-    title: 'E-commerce',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas?',
-    url: '/preview.jpg',
+    role: true,
+    title: 'Scoot multi-page website',
+    image: '/Screenshot 2024-08-05 at 15.58.55.png',
+    url: 'https://scoot-multipage-one.vercel.app/',
   },
   {
-    title: 'Entertainment Website',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas?',
-    url: '/preview.jpg',
+    role: true,
+    title: 'Audio E-commerce',
+    image: '/Screenshot 2024-08-05 at 15.53.20.png',
+    url: 'https://audio-ecommerce-sooty.vercel.app/',
   },
   {
-    title: 'Invoice web',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas?',
-    url: '/preview.jpg',
+    role: false,
+    title: 'Scoot multi-page website',
+    image: '/Screenshot 2024-08-05 at 15.58.55.png',
+    url: 'https://scoot-multipage-one.vercel.app/',
   },
   {
-    title: 'E-commerce',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas?',
-    url: '/preview.jpg',
+    role: false,
+    title: 'Audio E-commerce',
+    image: '/Screenshot 2024-08-05 at 15.53.20.png',
+    url: 'https://audio-ecommerce-sooty.vercel.app/',
   },
 ];

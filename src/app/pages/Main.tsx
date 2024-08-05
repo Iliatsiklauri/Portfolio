@@ -12,7 +12,7 @@ export default function Main() {
   const AboutRef = useRef<HTMLDivElement | null>(null);
   const ContactRef = useRef<HTMLDivElement | null>(null);
   return (
-    <div className="flex items-center justify-center flex-col w-full overflow-hidden main xl:px-[10%]">
+    <div className="flex items-center justify-center flex-col w-full overflow-hidden main lg:px-[5%] xl:px-[10%]">
       <Header
         PortfolioRef={PortfolioRef}
         AboutRef={AboutRef}

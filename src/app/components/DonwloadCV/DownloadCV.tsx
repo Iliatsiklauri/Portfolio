@@ -5,7 +5,7 @@ export default function DownloadCV() {
   return (
     <a
       className="py-4 px-8  rounded-[30px] donwload flex items-center justify-center gap-2"
-      href="/CV.pdf"
+      href="/MyResume.pdf"
       download
     >
       <Image alt="donwload" src={'/download.png'} height={20} width={20} />

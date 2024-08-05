@@ -67,7 +67,7 @@ export default function Header({
   return (
     <motion.div
       className="fixed border border-white border-opacity-40 bg-white bg-opacity-70 shadow-lg 
-    shadow-black/[0.1] backdrop-blur-[0.5rem] top-6 h-[3.25rem] sm:w-[60%]  lg:w-[50%] xl:w-[40%] rounded-full flex items-center justify-around z-10"
+    shadow-black/[0.1] backdrop-blur-[0.5rem] top-6 h-[3.25rem] w-[80%] sm:w-[60%]  lg:w-[50%] xl:w-[40%] rounded-full flex items-center justify-around z-10"
       initial={{ y: 150, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: 'spring', damping: 20 }}
@@ -98,7 +98,9 @@ export default function Header({
       </button>
       <button
         className={`text-gray-900 ${
-          isPortfolioInView ? 'text-opacity-100 font-medium ' : 'text-opacity-50'
+          isPortfolioInView
+            ? 'text-opacity-100 font-medium '
+            : 'text-opacity-50'
         } hover:text-opacity-80 cursor-pointer transition text-black font-base`}
         onClick={() =>
           PortfolioRef.current?.scrollIntoView({

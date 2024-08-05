@@ -1,7 +1,5 @@
 import React, { MutableRefObject } from 'react';
 import HomeText from '../../components/HomeText/HomeText';
-import { motion } from 'framer-motion';
-import Profile from '@/app/components/ProfilePic/Profile';
 
 export default function Top({
   HomeRef,

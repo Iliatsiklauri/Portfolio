@@ -11,8 +11,8 @@ export default function HomeText() {
       className="flex items-center justify-center flex-col gap-10"
     >
       <h1 className="text-xl lg:text-3xl w-[300px] lg:w-[500px] text-white font-light tracking-wide text-center">
-        Hello 👋, <span className="font-semibold">I&apos;m Ilia,</span> a skilled frontend
-        developer expanding into fullstack. Let&apos;s collaborate on exciting projects!
+        Hello 👋 <span className="font-semibold">I&apos;m Ilia</span> a skilled
+        Full-Stack develope . Let&apos;s collaborate on exciting projects!
       </h1>
       <DownloadCV />
     </motion.div>
