@@ -74,7 +74,7 @@ export default function ProjectBox({
               <Image
                 key={key}
                 src={`${el}`}
-                alt="react"
+                alt={`${el}`}
                 width={55}
                 height={55}
               />
