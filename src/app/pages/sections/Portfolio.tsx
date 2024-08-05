@@ -18,7 +18,7 @@ export default function Portfolio({
   }, [isInView]);
   return (
     <motion.div
-      className="w-full h-screen flex items-center justify-center flex-col md:pt-20 lg:pt-20 gap-3 md:gap-10 lg:gap-0"
+      className="w-full h-screen flex items-center justify-center flex-col md:pt-20 gap-5 md:gap-10 lg:gap-0"
       ref={PortfolioRef}
       variants={{
         visible: { opacity: 1, x: 0 },
@@ -27,7 +27,7 @@ export default function Portfolio({
       <h2 className="text-2xl lg:text-4xl font-semibold text-white">
         Projects
       </h2>
-      <div className="flex flex-col items-center md:items-start w-full px-5 md:px-10 lg:px-0 lg:gap-0 gap-4">
+      <div className="flex flex-col items-center md:items-start w-full px-5 md:px-10 lg:px-0 lg:gap-0 gap-6">
         {portfolioData.map((el, key) => (
           <ProjectBox
             image={`${el.image}`}
@@ -38,6 +38,7 @@ export default function Portfolio({
             role={el.role}
             main={el.main}
             top={el.top}
+            tools={el.tools}
           />
         ))}
       </div>

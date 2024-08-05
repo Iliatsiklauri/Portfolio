@@ -1,13 +1,19 @@
-import { imageConfigDefault } from 'next/dist/shared/lib/image-config';
-
 export const portfolioData = [
   {
+    top: true,
     role: false,
     main: false,
-    top: true,
     title: 'Scoot multi-page website',
     image: '/images/Screenshot 2024-08-05 at 15.58.55.png',
-    url: '/https://scoot-multipage-one.vercel.app/',
+    url: 'https://scoot-multipage-one.vercel.app/',
+    tools: [
+      '/icons/icons8-nestjs-48.png',
+      '/icons/8546827_aws_icon.png',
+      '/icons/react.svg',
+      '/icons/mongoDB.svg',
+      '/icons/nextjs.svg',
+      '/icons/4375017_js_logo_node_icon.png',
+    ],
   },
   {
     role: true,
@@ -15,14 +21,16 @@ export const portfolioData = [
     top: false,
     title: 'Audio E-commerce',
     image: '/images/Screenshot 2024-08-05 at 15.53.20.png',
-    url: '/https://audio-ecommerce-sooty.vercel.app/',
+    url: 'https://audio-ecommerce-sooty.vercel.app/',
+    tools: ['/icons/nextjs.svg', '/icons/react.svg'],
   },
   {
-    top: false,
     role: false,
     main: true,
+    top: false,
     title: 'Scoot multi-page website',
     image: '/images/Screenshot 2024-08-05 at 15.58.55.png',
-    url: '/https://scoot-multipage-one.vercel.app/',
+    url: 'https://scoot-multipage-one.vercel.app/',
+    tools: ['/icons/nextjs.svg', '/icons/react.svg'],
   },
 ];
